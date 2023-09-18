@@ -1,4 +1,4 @@
-import { Line, LineChart, XAxis, YAxis } from "recharts";
+import { Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
 
 const Chart = () => {
   const subjectMarksData = [
@@ -18,6 +18,7 @@ const Chart = () => {
       <LineChart width={1000} height={300} data={subjectMarksData}>
         <XAxis dataKey="name"></XAxis>
         <YAxis ></YAxis>
+        <Tooltip></Tooltip>
 
         <Line dataKey="math"></Line>
         <Line dataKey="chemistry" stroke="red"></Line>
